@@ -12,7 +12,8 @@ EventMachine.run do
 #  exchange = channel.default_exchange
 
   queue.subscribe do |payload|
-    puts "Received a message: #{payload}."
+	puts "Received a message: #{payload}."
+	puts payload.inspect
 
 #    connection.close {
 #      EventMachine.stop { exit }
