@@ -8,7 +8,7 @@ EventMachine.run do
   puts "Connecting to mq.politiki.si broker."
 
   channel  = AMQP::Channel.new(connection)
-  queue    = channel.queue("politiki.dev", :auto_delete => true)
+  queue    = channel.queue("politiki.twitter", :auto_delete => true)
 #  exchange = channel.default_exchange
 
   queue.subscribe do |payload|
