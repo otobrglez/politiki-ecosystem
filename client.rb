@@ -13,7 +13,7 @@ EventMachine.run do
 
   queue.subscribe do |payload|
 	puts "Received a message: #{payload}."
-	puts payload.inspect
+	puts payload.class
 
 #    connection.close {
 #      EventMachine.stop { exit }
