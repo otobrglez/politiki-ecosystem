@@ -5,4 +5,8 @@ gem "t"
 gem "zemanta"
 
 gem "amqp"
+gem "foreman"
 
+gem "httparty"
+
+gem "clockwork"
