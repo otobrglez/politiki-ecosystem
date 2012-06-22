@@ -29,4 +29,4 @@ production:
   facebook_secret: "7f075733a50df7955c9e357f6310212b"
   facebook_token: AAAE97zohRRkBAPcyn9KIDdHn4ELgaUWcUVgZAEUbxtkQHd1HU1HlTuZBFddvK43NhzvG3N27Nx0i6dusqsB2ZABoRuTRsupgSmaluf8jQZDZD
   peerindex_key: 693a5ceb132adfd5edd3a01676cb14dd
-  klout_key: <%= ENV["POLITIKI_KLOUT_KEY"]
+  klout_key: <%= ENV["POLITIKI_KLOUT_KEY"] %>
