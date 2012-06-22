@@ -1,7 +1,12 @@
 # By Oto Brglez - <oto.brglez@opalab.com>
 
 require 'bundler/setup'
+require './lib/bot_utils'
 require 'amqp'
+
+BotUtils.init
+
+
 
 if ARGV[0].nil?
 	puts "Missing channel."
@@ -18,7 +23,7 @@ EM.run do
 	puts "manager: queue: #{ARGV[0]}"
 	puts "manager: value: #{ARGV[1]}"
 
-	connection = AMQP.connect(:host => 'mq.politiki.si')
+	connection = AMQP.connect(BotUtils.config["amqp_url"])
 	channel  = AMQP::Channel.new(connection)
 	queue    = channel.queue(ARGV[0], :auto_delete => true)
 

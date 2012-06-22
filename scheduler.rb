@@ -11,11 +11,12 @@ require 'amqp'
 include Clockwork
 BotUtils.init
 
-def dispatch_measurement_for_objects measurements=["facebook.pages","twitter.user"]
+
+# Opens connection and triggers measurements for targets
+def dispatch_measurement_for_objects measurements=["facebook.pages","twitter.user","peerindex","klout"]
 	targets = BotUtils.collection('targets').map!{|i| i["target"]["id"] }
 
-
-	AMQP.start(host: BotUtils.config["amqp_host"]) do |connection|
+	AMQP.start(BotUtils.config["amqp_url"]) do |connection|
 		AMQP::Channel.new do |channel|
 			log "Opening channel: ##{channel.id}"
 			

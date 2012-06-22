@@ -34,6 +34,14 @@ module BotUtils
 		end
 	end
 
+	class PIM < PolitikiObject
+		def put(pim={})
+			self.class.put("/pim.json",body:{
+				pim: pim
+			}).parsed_response
+		end
+	end
+
 	def self.init
 		@@config = YAML.load(ERB.new(File.read("config.yml")).result)[ENV["POLITIKI_BOT_ENV"] || "developement"]
 		

@@ -2,7 +2,7 @@ developement:
   username: "fq2yyg9IVcaI"
   password: "H5PyWERV8kfh"
   politiki_uri: "http://localhost:3000/api/"
-  amqp_host: mq.politiki.si
+  amqp_url: "amqp://milo"
   twitter_consumer_key: ccxOTpcD9rgaUkWrwEdGrA
   twitter_consumer_secret: 8Bem97vcdSa2AXCv8Gs28LtgJ7FXUdu8WAtWS2PE9c
   twitter_access_token: 20590206-Ka9X824CS4UfwAr6FOKMK7CCdoQikuUEwV1b9HHNQ
@@ -11,12 +11,14 @@ developement:
   facebook_key: "349572658447641"
   facebook_secret: "7f075733a50df7955c9e357f6310212b"
   facebook_token: AAAE97zohRRkBAPcyn9KIDdHn4ELgaUWcUVgZAEUbxtkQHd1HU1HlTuZBFddvK43NhzvG3N27Nx0i6dusqsB2ZABoRuTRsupgSmaluf8jQZDZD
+  peerindex_key: 693a5ceb132adfd5edd3a01676cb14dd
+  klout_key: cmqqa7tgcdqqckrv9q4pz2mn
 
 production:
   username: "fq2yyg9IVcaI"
   password: "H5PyWERV8kfh"
   politiki_uri: "http://localhost:3000/api/"
-  amqp_host: mq.politiki.si
+  amqp_url: "amqp://app1538126_heroku.com:7PLzTqNTitkwiIQNyExf4fuSXVJWHk06@lemur.cloudamqp.com/app1538126_heroku.com"
   twitter_consumer_key: ccxOTpcD9rgaUkWrwEdGrA
   twitter_consumer_secret: 8Bem97vcdSa2AXCv8Gs28LtgJ7FXUdu8WAtWS2PE9c
   twitter_access_token: 20590206-Ka9X824CS4UfwAr6FOKMK7CCdoQikuUEwV1b9HHNQ
@@ -25,4 +27,5 @@ production:
   facebook_key: "349572658447641"
   facebook_secret: "7f075733a50df7955c9e357f6310212b"
   facebook_token: AAAE97zohRRkBAPcyn9KIDdHn4ELgaUWcUVgZAEUbxtkQHd1HU1HlTuZBFddvK43NhzvG3N27Nx0i6dusqsB2ZABoRuTRsupgSmaluf8jQZDZD
-  
+  peerindex_key: 693a5ceb132adfd5edd3a01676cb14dd
+  klout_key: cmqqa7tgcdqqckrv9q4pz2mn

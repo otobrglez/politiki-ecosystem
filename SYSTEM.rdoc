@@ -1,0 +1,17 @@
+== Enviroment
+
+Politiki Web
+	politiki
+
+Scheduler:
+	politiki-si-scheduler
+
+Twitter Stream
+	politiki-si-stream_twitter
+
+Twitter bot
+	politiki-si-bot_twitter
+
+Facebook bot
+	politiki-si-bot_facebook
+
