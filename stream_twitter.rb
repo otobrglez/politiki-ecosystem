@@ -23,6 +23,9 @@ end
 Log=Logger.new($stdout) if BotUtils.config["log_path"]==0
 Log=Logger.new(BotUtils.config["log_path"]) if BotUtils.config["log_path"]!=0
 
+Log.warn BotUtils.config.inspect
+
+
 @targets = Hash.new
 
 def get_targets
