@@ -11,6 +11,7 @@ require 'amqp'
 include Clockwork
 BotUtils.init
 
+log "Up."
 
 # Opens connection and triggers measurements for targets
 def dispatch_measurement_for_objects measurements=["facebook.pages","twitter.user","peerindex","klout"]

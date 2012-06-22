@@ -1,20 +1,39 @@
 == Enviroment
 
+POLITIKI_API_USERNAME
+POLITIKI_API_PASSWORD
+POLITIKI_BOT_ENV="production"
+
+
+
 Politiki Web
 	politiki
+	GIT: heroku	git@heroku.com:politiki.git
+
 
 Scheduler:
 	politiki-si-scheduler
 	MQ: 1
+	GH1: origin	git@github.com:otobrglez/politiki-ecosystem.git 
+	P1: politiki-si-scheduler	git@heroku.com:politiki-si-scheduler.git
+
 
 Twitter Stream
-	politiki-si-stream_twitter
+	politiki-si-stream-twitter
 	MQ: 0
+	GH1: origin	git@github.com:otobrglez/politiki-ecosystem.git 	
+	P1: politiki-si-scheduler	git@heroku.com:politiki-si-scheduler.git
+	
 
 Twitter bot
 	politiki-si-bot_twitter
 	MQ: 1
+	GH1: origin	git@github.com:otobrglez/politiki-ecosystem.git 
+	P1: politiki-si-scheduler	git@heroku.com:politiki-si-scheduler.git
+
 
 Facebook bot
 	politiki-si-bot_facebook
 	MQ: 1
+	GH1: origin	git@github.com:otobrglez/politiki-ecosystem.git 
+	P1: politiki-si-scheduler	git@heroku.com:politiki-si-scheduler.git
