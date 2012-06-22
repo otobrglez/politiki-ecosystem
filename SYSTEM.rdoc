@@ -5,13 +5,16 @@ Politiki Web
 
 Scheduler:
 	politiki-si-scheduler
+	MQ: 1
 
 Twitter Stream
 	politiki-si-stream_twitter
+	MQ: 0
 
 Twitter bot
 	politiki-si-bot_twitter
+	MQ: 1
 
 Facebook bot
 	politiki-si-bot_facebook
-
+	MQ: 1

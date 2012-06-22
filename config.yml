@@ -15,9 +15,9 @@ developement:
   klout_key: cmqqa7tgcdqqckrv9q4pz2mn
 
 production:
-  username: "fq2yyg9IVcaI"
-  password: "H5PyWERV8kfh"
-  politiki_uri: "http://localhost:3000/api/"
+  username: <%= ENV["POLITIKI_API_USERNAME"] %>
+  password: <%= ENV["POLITIKI_API_PASSWORD"] %>
+  politiki_uri: "http://politiki.si/api/"
   amqp_url: "amqp://app1538126_heroku.com:7PLzTqNTitkwiIQNyExf4fuSXVJWHk06@lemur.cloudamqp.com/app1538126_heroku.com"
   twitter_consumer_key: ccxOTpcD9rgaUkWrwEdGrA
   twitter_consumer_secret: 8Bem97vcdSa2AXCv8Gs28LtgJ7FXUdu8WAtWS2PE9c
