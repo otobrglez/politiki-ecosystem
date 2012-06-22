@@ -23,7 +23,6 @@ production:
   twitter_consumer_secret: 8Bem97vcdSa2AXCv8Gs28LtgJ7FXUdu8WAtWS2PE9c
   twitter_access_token: 20590206-Ka9X824CS4UfwAr6FOKMK7CCdoQikuUEwV1b9HHNQ
   twitter_access_token_secret: F6N2r41nBj791vHMkUO6nsrpEWUmk5pK4SGsSK2nyo
-  # log_path: '/dev/null'
   log_path: 0
   facebook_key: "349572658447641"
   facebook_secret: "7f075733a50df7955c9e357f6310212b"
